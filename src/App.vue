@@ -7,8 +7,10 @@
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Inclusive+Sans:wght@300;400&display=swap');
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inclusive Sans, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -25,6 +27,12 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #33a5de;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 </style>
