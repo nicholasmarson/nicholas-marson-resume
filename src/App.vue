@@ -1,9 +1,12 @@
 <template>
-  <nav>
+  <header class="header">
+  <nav class="main-nav">
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/about">About</router-link> |
+    <router-link to="/resume">Resume</router-link>
   </nav>
   <router-view/>
+  </header>
 </template>
 
 <style>
@@ -34,5 +37,9 @@ nav a.router-link-exact-active {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.header {
+  display: flex;
 }
 </style>
