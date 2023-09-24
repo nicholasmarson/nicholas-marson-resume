@@ -1,13 +1,27 @@
 <template>
-  <header class="header">
-  <nav class="main-nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/resume">Resume</router-link>
-  </nav>
-  <router-view/>
+  
+  <header>
+    <TitlePicture id="title-area" name="Nicholas Marson"/>
+    <Navigation id="nav-area"/>
   </header>
+  
+  <div>
+    <router-view id="main-area"/>
+  </div>
+
 </template>
+
+<script>
+import Navigation from './components/Navigation.vue'
+import TitlePicture from './components/TitlePicture.vue';
+
+export default {
+  components: {
+    Navigation,
+    TitlePicture
+}
+}
+</script>
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Inclusive+Sans:wght@300;400&display=swap');
@@ -20,26 +34,31 @@
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #60caff;
+  grid-template-areas:
+  "title nav"
+  ;
+  border: 3px solid #216dc9;
 }
 
 nav a.router-link-exact-active {
-  color: #33a5de;
+  color: #ffffff;
+}
+
+#nav-area {
+  grid-area: nav;
+}
+
+#title-area {
+  grid-area: title;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-.header {
-  display: flex;
 }
 </style>
