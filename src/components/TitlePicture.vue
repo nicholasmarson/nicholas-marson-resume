@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div id="picture-name-container">
     <img id="portrait" src="@/images/circle-portrait.png" alt="Picture of me"/>
-    {{ name }}
+    <p id="my-name">{{ name }} </p>
   </div>
 </template>
 
@@ -14,19 +14,5 @@ export default {
 }
 </script>
 
-<style scoped>
-
-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-decoration: underline;
-}
-
-#portrait {
-  height: 100px;
-  margin: 5px;
-}
-
+<style>
 </style>

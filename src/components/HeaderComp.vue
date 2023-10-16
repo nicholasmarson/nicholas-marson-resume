@@ -26,6 +26,41 @@ export default {
 
 <style>
 #header-comp {
+  background-color: #60caff;
+}
+
+#picture-name-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #60caff;
+}
+
+#portrait {
+  height: 200px;
+  margin: 5px;
+}
+
+#my-name {
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+  margin: 1px;
+  padding-bottom: 30px;
+  color:#ffffff;
+  text-decoration: underline;
+
+}
+
+#nav-area {
+  display: none;
+}
+
+
+
+/* ------------------------------------------------------- */
+
+@media (min-width: 429px) and (min-height: 927px) {
+#header-comp {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #60caff;
@@ -33,6 +68,19 @@ export default {
   "title nav"
   ;
   border: 3px solid #216dc9;
+}
+
+#picture-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: underline;
+}
+
+#portrait {
+  height: 100px;
+  margin: 5px;
 }
 
 nav a.router-link-exact-active {
@@ -57,6 +105,7 @@ nav a.router-link-exact-active {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
 }
 
 </style>
