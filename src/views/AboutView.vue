@@ -1,5 +1,15 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <header-comp />
 </template>
+
+<script>
+import HeaderComp from '@/components/HeaderComp.vue'
+export default {
+  components: { HeaderComp },
+
+}
+</script>
+
+<style>
+
+</style>
