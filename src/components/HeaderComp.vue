@@ -27,17 +27,25 @@ export default {
 <style>
 #header-comp {
   background-color: #60caff;
+  background: linear-gradient(to bottom, #3498db, #2980b9);
+  overflow: hidden;
+  border-bottom: 2px;
+  border-bottom-style: groove;
 }
 
 #picture-name-container {
   display: flex;
   flex-direction: column;
   background-color: #60caff;
+  padding-top: 20px;
 }
 
 #portrait {
   height: 200px;
   margin: 5px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+
 }
 
 #my-name {
@@ -45,8 +53,8 @@ export default {
   justify-content: center;
   font-size: 36px;
   margin: 1px;
-  padding-bottom: 30px;
-  color:#ffffff;
+  padding: 1px;
+  color: black;
   text-decoration: underline;
 
 }
@@ -54,58 +62,4 @@ export default {
 #nav-area {
   display: none;
 }
-
-
-
-/* ------------------------------------------------------- */
-
-@media (min-width: 429px) and (min-height: 927px) {
-#header-comp {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: #60caff;
-  grid-template-areas:
-  "title nav"
-  ;
-  border: 3px solid #216dc9;
-}
-
-#picture-name {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-decoration: underline;
-}
-
-#portrait {
-  height: 100px;
-  margin: 5px;
-}
-
-nav a.router-link-exact-active {
-  color: #ffffff;
-}
-
-#nav-area {
-  grid-area: nav;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 5%;
-}
-
-#title-area {
-  grid-area: title;
-  display: flex;
-  justify-content: flex-start;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-}
-
 </style>
