@@ -32,11 +32,11 @@ export default {
 }
 
 #header-comp {
-  height: 31%;
+  height: 30%;
 }
 
 #greeting-message {
-  height: 59%;
+  height: 60%;
 }
 
 #footer-container {

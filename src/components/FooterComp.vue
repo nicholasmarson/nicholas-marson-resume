@@ -4,19 +4,19 @@
       <ul>
         <li>
           <router-link v-bind:to="{ name: 'home' }">
-            <img src="../assets/home.png" id="home" />
+            <img src="../assets/icons8-home-50.png" id="home" />
             <p class="icon-text">Welcome</p>
           </router-link>
         </li>
         <li>
           <router-link v-bind:to="{name: 'about'}">
-            <img src="../assets/marker.png" id="marker" />
+            <img src="../assets/icons8-about-me-50(2).png" id="marker" />
             <p class="icon-text">About Me</p>
           </router-link>
         </li>
         <li>
           <a @click="openPDF" style="cursor: pointer;">
-            <img src="../assets/trophy.png" id="trophy" />
+            <img src="../assets/icons8-export-pdf-50.png" id="trophy" />
             <p class="icon-text">Resume</p>
             </a>
         </li>
@@ -53,8 +53,10 @@ export default {
 
 <style scoped>
 img {
-  width: 30px;
+  width: 40px;
   height: auto;
+  padding: 0;
+  margin: 0;
 }
 
 #footer-container {
@@ -74,7 +76,7 @@ img {
 nav {
   height: 100%;
   width: 100%;
-  padding-top: 2.5%;
+
   
 }
 
@@ -90,10 +92,8 @@ nav ul {
 }
 
 nav ul li {
-  font-size: 16px;
   text-align: center;
   flex: 1;
-
 }
 
 

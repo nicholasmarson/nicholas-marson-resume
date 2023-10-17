@@ -39,4 +39,14 @@ body {
   padding: 0;
   overflow: hidden;
 }
+
+.router-link-active {
+  margin: 0;
+  padding: 0;
+}
+
+.router-link-exact-active {
+  margin: 0;
+  padding: 0;
+}
 </style>

@@ -33,7 +33,7 @@ export default {
 #portrait {
   display: flex;
   flex: 1;
-  border: 7px;
+  border: 4px;
   border-style: solid;
   border-radius: 50%;
   border-color: rgb(0, 0, 0);
