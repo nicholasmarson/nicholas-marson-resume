@@ -1,14 +1,14 @@
 <template>
-  <header-comp />
+<file-viewer />
 </template>
 
 <script>
-import HeaderComp from '@/components/HeaderComp.vue'
+import FileViewer from '@/components/FileViewer.vue'
+
 
 export default {
 components: {
-  HeaderComp,
-
+  FileViewer
 }
 }
 </script>

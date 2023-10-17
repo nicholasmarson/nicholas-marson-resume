@@ -15,10 +15,10 @@
           </router-link>
         </li>
         <li>
-          <router-link v-bind:to="{ name: 'resume' }">
+          <a @click="openPDF" style="cursor: pointer;">
             <img src="../assets/trophy.png" id="trophy" />
             <p class="icon-text">Resume</p>
-          </router-link>
+            </a>
         </li>
       </ul>
     </nav>
@@ -26,6 +26,8 @@
 </template>
 
 <script>
+import resumePDF from "@/assets/Nicholas Marson Resume.pdf";
+
 export default {
   name: "footer-comp",
   data() {
@@ -36,6 +38,14 @@ export default {
   methods: {
     toggleDropdown() {
       this.isDropdownOpen = !this.isDropdownOpen;
+    },
+    openPDF() {
+      const pdfWindow = window.open(resumePDF, "_blank");
+      if (pdfWindow) {
+        pdfWindow.focus();
+      } else {
+        alert("Please allow pop-ups for this website to view the PDF.");
+      }
     },
   },
 };
@@ -93,5 +103,10 @@ nav ul li {
     padding: 0;
     margin: 0;
     font-size: 8px;
+}
+
+
+#footer-container a:hover {
+  cursor: pointer;
 }
 </style>
