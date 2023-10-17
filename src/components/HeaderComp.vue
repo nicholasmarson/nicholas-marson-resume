@@ -1,7 +1,7 @@
 <template>
 <div id="header-comp">
 
-  <title-picture id="title-area" name="Nicholas Marson"/>
+  <title-picture name="Nicholas Marson"/>
   {{ name }}
   <navigation id="nav-area"/>
   
@@ -26,37 +26,16 @@ export default {
 
 <style>
 #header-comp {
-  background-color: #60caff;
-  background: linear-gradient(to bottom, #3498db, #2980b9);
-  overflow: hidden;
-  border-bottom: 2px;
-  border-bottom-style: groove;
-}
-
-#picture-name-container {
-  display: flex;
-  flex-direction: column;
-  background-color: #60caff;
-  padding-top: 20px;
-}
-
-#portrait {
-  height: 200px;
-  margin: 5px;
-  margin-bottom: 0;
-  padding-bottom: 0;
-
-}
-
-#my-name {
   display: flex;
   justify-content: center;
-  font-size: 36px;
-  margin: 1px;
-  padding: 1px;
-  color: black;
-  text-decoration: underline;
-
+  align-items: center;
+  background-color: #60caff;
+  background: linear-gradient(to bottom, #3498db, #2980b9);
+  border-bottom: 2px;
+  border-bottom-style: groove;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  flex: 1;
 }
 
 #nav-area {

@@ -83,7 +83,7 @@ nav ul {
   margin: 5;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100vw;
   overflow: hidden;
