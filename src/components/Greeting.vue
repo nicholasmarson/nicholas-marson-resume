@@ -26,7 +26,7 @@ export default {
 
 <style>
 #greeting-message {
-    background: repeating-linear-gradient(to bottom, #c0e6ff, #8ea7b8);
+    background: repeating-linear-gradient(to bottom, #edf6fc, #d6eeff);
     font-size: 24px;
     padding: 5px;
     overflow: none;

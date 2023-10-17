@@ -4,9 +4,12 @@
 
 <script>
 import HeaderComp from '@/components/HeaderComp.vue'
-export default {
-  components: { HeaderComp },
 
+export default {
+components: {
+  HeaderComp,
+
+}
 }
 </script>
 
