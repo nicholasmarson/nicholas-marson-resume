@@ -12,7 +12,7 @@ export default {
     data() {
         return {
             aboutMe:
-            `As an aspiring Full Stack Software Developer currently pursuing education in the dynamic world of software development, I am actively honing my skills in Spring Boot, Java, PostgreSQL, HTML, CSS, JavaScript, Vue.js, and responsive design. Embracing the challenges of this field, I am passionate about learning and committed to becoming proficient in these technologies to craft remarkable applications and systems.
+            `As an aspiring Full Stack Software Developer currently pursuing education in the dynamic world of software development, I am actively honing my skills in Spring Boot, Java, C#, .NET, PostgreSQL, HTML, CSS, JavaScript, Vue.js, and responsive design. Embracing the challenges of this field, I am passionate about learning and committed to becoming proficient in these technologies to craft remarkable applications and systems.
 
             Beyond my technical pursuits, my 10 year background in fine-dining has instilled in me a strong sense of attention to detail and dedication to customer satisfaction. These qualities seamlessly transition into my coding projects, where I prioritize user experiences and strive to deliver interfaces that are both functional and aesthetically pleasing.
 
