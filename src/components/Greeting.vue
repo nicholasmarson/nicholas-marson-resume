@@ -14,7 +14,7 @@ export default {
 
             This is an ever-growing project and it's purpose is to display and put to practice my development skills. It will be constantly worked on so the state it's in will vary.
             
-            Currently I am taking a mobile-first approach, you'll find the best experience to be under 429 x 927
+            I have just finished the mobile/desktop view differences. I'm either getting ready to deploy, or just finished deploying!
             
             I hope you enjoy!`
         }

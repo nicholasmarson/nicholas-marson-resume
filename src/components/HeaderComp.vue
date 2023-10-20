@@ -32,6 +32,7 @@
 <script>
 import Navigation from "./Navigation.vue";
 import TitlePicture from "./TitlePicture.vue";
+import resumePDF from "@/assets/Nicholas Marson Resume.pdf";
 
 export default {
   props: {
@@ -40,6 +41,16 @@ export default {
   components: {
     TitlePicture,
     Navigation,
+  },
+  methods: {
+    openPDF() {
+      const pdfWindow = window.open(resumePDF, "_blank");
+      if (pdfWindow) {
+        pdfWindow.focus();
+      } else {
+        alert("Please allow pop-ups for this website to view the PDF.");
+      }
+    },
   },
 };
 </script>
@@ -90,11 +101,11 @@ nav {
   }
 
   nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
     list-style: none;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 50vw;
     overflow: hidden;
     margin: 0;

@@ -38,4 +38,30 @@ export default {
 #footer-container {
   height: 10%;
 }
+
+@media (min-width: 429px) and (min-height: 927px) {
+#home-view {
+  height: 100vh;
+}
+
+#header-comp {
+  height: 13%;
+  margin: 0;
+  padding: 0;
+}
+
+#about-me {
+  height: 90%;
+}
+
+#picture-name-container {
+  padding: 0;
+  margin: 5px;
+}
+
+#portrait {
+  height: 100px;
+  margin: 5px;
+}
+}
 </style>
