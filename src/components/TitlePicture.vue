@@ -50,7 +50,7 @@ export default {
   color: black;
   text-decoration: underline;
   padding-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 
 @media (min-width: 429px) and (min-height: 927px) {
@@ -62,10 +62,12 @@ export default {
 
 #portrait {
   width: 100%;
+  height: auto;
 }
 
 #my-name {
   font-size: 14px;
+  margin-left: 20px;
 }
 }
 

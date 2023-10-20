@@ -44,7 +44,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #header-comp {
   display: flex;
   justify-content: center;
@@ -69,14 +69,7 @@ nav {
 @media (min-width: 429px) and (min-height: 927px) {
   #header-comp {
     display: flex;
-  }
-
-  .icon-text {
-    text-decoration: none;
-    color: black;
     padding: 0;
-    margin: 0;
-    font-size: 8px;
   }
 
   img {
@@ -93,6 +86,7 @@ nav {
     justify-content: flex-end;
     align-items: flex-end;
     padding-left: 50px;
+    padding-top: 5px;
   }
 
   nav ul {
@@ -109,6 +103,24 @@ nav {
   nav ul li {
     text-align: center;
     padding: 5%;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .icon-text {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+    margin: 1px;
+    color: black;
+    text-decoration: none;
+  }
+
+  .router-link-exact-active {
+    text-decoration: underline;
+    margin: 0;
+    padding: 0;
   }
 }
 </style>
