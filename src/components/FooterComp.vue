@@ -128,6 +128,16 @@ nav ul li {
   font-size: 8px;
 }
 
+a {
+  text-decoration: none;
+}
+
+.router-link-exact-active {
+  text-decoration: underline;
+  margin: 0;
+  padding: 0;
+}
+
 .dropdown-menu {
   display: flex;
   flex-direction: column;
@@ -165,5 +175,11 @@ nav ul li {
 .dropdown-option a:hover {
   color: #555;
   background-color: #f0f0f0;
+}
+
+@media (min-width: 429px) and (min-height: 927px) {
+#footer-container {
+  display: none;
+}
 }
 </style>

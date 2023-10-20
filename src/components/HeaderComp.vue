@@ -1,27 +1,47 @@
 <template>
-<div id="header-comp">
+  <div id="header-comp">
+    <title-picture name="Nicholas Marson" />
+    {{ name }}
+    <navigation id="nav-area" />
 
-  <title-picture name="Nicholas Marson"/>
-  {{ name }}
-  <navigation id="nav-area"/>
-  
+    <nav>
+      <ul>
+        <li>
+          <router-link v-bind:to="{ name: 'home' }">
+            <img src="../assets/icons8-home-50.png" id="home" />
+            <p class="icon-text">Welcome</p>
+          </router-link>
+        </li>
+        <li>
+          <router-link v-bind:to="{ name: 'about' }">
+            <img src="../assets/icons8-about-me-50(2).png" id="marker" />
+            <p class="icon-text">About Me</p>
+          </router-link>
+        </li>
+        <li>
+          <a @click="openPDF" style="cursor: pointer">
+            <img src="../assets/icons8-export-pdf-50.png" id="trophy" />
+            <p class="icon-text">Resume</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </template>
 
 <script>
-import Navigation from './Navigation.vue'
-import TitlePicture from './TitlePicture.vue'
+import Navigation from "./Navigation.vue";
+import TitlePicture from "./TitlePicture.vue";
 
 export default {
   props: {
     name: String,
   },
-  components: { 
+  components: {
     TitlePicture,
-    Navigation 
-    },
-
-}
+    Navigation,
+  },
+};
 </script>
 
 <style>
@@ -38,7 +58,57 @@ export default {
   flex: 1;
 }
 
+nav {
+  display: none;
+}
+
 #nav-area {
   display: none;
+}
+
+@media (min-width: 429px) and (min-height: 927px) {
+  #header-comp {
+    display: flex;
+  }
+
+  .icon-text {
+    text-decoration: none;
+    color: black;
+    padding: 0;
+    margin: 0;
+    font-size: 8px;
+  }
+
+  img {
+    width: 40px;
+    height: auto;
+  }
+
+  img:hover {
+    cursor: pointer;
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: 50px;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  nav ul li {
+    text-align: center;
+    padding: 5%;
+  }
 }
 </style>

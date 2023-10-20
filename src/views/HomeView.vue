@@ -46,51 +46,28 @@ export default {
 
 
 @media (min-width: 429px) and (min-height: 927px) {
-#header-comp {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: #60caff;
-  grid-template-areas:
-  "title nav"
-  ;
-  border: 3px solid #216dc9;
+#home-view {
+  height: 100vh;
 }
 
-#picture-name {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-decoration: underline;
+#header-comp {
+  height: 13%;
+  margin: 0;
+  padding: 0;
+}
+
+#picture-name-container {
+  padding: 0;
+  margin: 5px;
+}
+
+#greeting-message {
+  height: 99%;
 }
 
 #portrait {
   height: 100px;
   margin: 5px;
-}
-
-nav a.router-link-exact-active {
-  color: #ffffff;
-}
-
-#nav-area {
-  grid-area: nav;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 5%;
-}
-
-#title-area {
-  grid-area: title;
-  display: flex;
-  justify-content: flex-start;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 }
 </style>

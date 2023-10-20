@@ -34,7 +34,6 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: repeating-linear-gradient(to bottom, #edf6fc, #d6eeff);
     margin: 0;
     overflow: auto;
 }

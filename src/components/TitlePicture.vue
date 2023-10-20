@@ -53,4 +53,20 @@ export default {
   margin-bottom: 30px;
 }
 
+@media (min-width: 429px) and (min-height: 927px) {
+#picture-name-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+#portrait {
+  width: 100%;
+}
+
+#my-name {
+  font-size: 14px;
+}
+}
+
 </style>
