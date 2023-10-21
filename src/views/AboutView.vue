@@ -42,6 +42,10 @@ export default {
   height: 10%;
 }
 
+#desktop-footer-comp {
+  display: none;
+}
+
 
 @media (min-width: 429px) and (min-height: 927px) {
 #home-view {

@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+  publicPath: '/nicholasmarson.github.io/',
   chainWebpack: (config) => {
     // Add a rule for handling PDF files
     config.module
