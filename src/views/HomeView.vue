@@ -3,6 +3,7 @@
   <header-comp/>
   <greeting />
   <footer-comp />
+  <desktop-footer-comp />
 </div>
  
 </template>
@@ -12,13 +13,15 @@
 import HeaderComp from '@/components/HeaderComp.vue'
 import Greeting from '@/components/Greeting.vue'
 import FooterComp from '@/components/FooterComp.vue'
+import DesktopFooterComp from '@/components/DesktopFooterComp.vue'
 
 export default {
   name: 'HomeView',
   components: {
     HeaderComp,
     Greeting,
-    FooterComp
+    FooterComp,
+    DesktopFooterComp
   }
 }
 </script>
@@ -41,6 +44,10 @@ export default {
 
 #footer-container {
   height: 10%;
+}
+
+#desktop-footer-comp {
+  display: none;
 }
 
 

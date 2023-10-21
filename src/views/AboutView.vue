@@ -3,6 +3,7 @@
   <header-comp />
   <about-me />
   <footer-comp />
+  <desktop-footer-comp />
   </div>
 </template>
 
@@ -10,11 +11,13 @@
 import HeaderComp from "@/components/HeaderComp.vue";
 import FooterComp from "@/components/FooterComp.vue";
 import AboutMe from '@/components/AboutMe.vue';
+import DesktopFooterComp from '@/components/DesktopFooterComp.vue';
 export default {
   components: {
     HeaderComp,
     FooterComp,
     AboutMe,
+    DesktopFooterComp
   },
 };
 </script>
@@ -39,6 +42,7 @@ export default {
   height: 10%;
 }
 
+
 @media (min-width: 429px) and (min-height: 927px) {
 #home-view {
   height: 100vh;
@@ -50,13 +54,13 @@ export default {
   padding: 0;
 }
 
-#about-me {
-  height: 90%;
-}
-
 #picture-name-container {
   padding: 0;
   margin: 5px;
+}
+
+#about-me {
+  height: 99%;
 }
 
 #portrait {

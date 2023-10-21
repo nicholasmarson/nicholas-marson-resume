@@ -37,7 +37,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    margin: 5px;
     overflow: auto;
 }
 </style>
